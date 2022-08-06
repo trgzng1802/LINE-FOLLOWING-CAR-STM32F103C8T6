@@ -1,0 +1,5 @@
+Added Component: Designator=SW1(SW_SLIDE)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VCC Pin=SW1-1
+Added Pin To Net: NetName=NetP5_2 Pin=SW1-2
+Added Member To Class: ClassName=fl_car (sch) Member=Component SW1 SW_SLIDE

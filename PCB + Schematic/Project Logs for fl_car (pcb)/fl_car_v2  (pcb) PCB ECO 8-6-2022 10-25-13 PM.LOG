@@ -1,0 +1,13 @@
+Change Component Footprint: Designator=R1 Old Footprint=RES-SM-0603 New Footprint=RES-SM-0805
+Added Component: Designator=D1(LED-3mm)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2(RES-SM-0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=D1-2
+Added Pin To Net: NetName=VCC Pin=R2-1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=R2-2
+Added Net: Name=NetD1_1
+Added Member To Class: ClassName=fl_car (sch) Member=Component D1 LED
+Added Member To Class: ClassName=fl_car (sch) Member=Component R2 RESISTOR SMD
