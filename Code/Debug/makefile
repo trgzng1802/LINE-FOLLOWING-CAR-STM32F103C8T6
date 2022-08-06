@@ -9,6 +9,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include Libraries/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -60,8 +61,8 @@ all: main-build
 main-build: FOLLOWING_LINE_CAR.elf secondary-outputs
 
 # Tool invocations
-FOLLOWING_LINE_CAR.elf FOLLOWING_LINE_CAR.map: $(OBJS) $(USER_OBJS) C:\Data\Projects\FOLLOWING-LINE-CAR-STM32F103C8T6\Code\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "FOLLOWING_LINE_CAR.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Data\Projects\FOLLOWING-LINE-CAR-STM32F103C8T6\Code\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FOLLOWING_LINE_CAR.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+FOLLOWING_LINE_CAR.elf FOLLOWING_LINE_CAR.map: $(OBJS) $(USER_OBJS) C:\Data\Projects\LINE-FOLLOWING-CAR-STM32F103C8T6\Code\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "FOLLOWING_LINE_CAR.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Data\Projects\LINE-FOLLOWING-CAR-STM32F103C8T6\Code\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FOLLOWING_LINE_CAR.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
