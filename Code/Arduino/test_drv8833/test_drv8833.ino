@@ -16,8 +16,8 @@ void setup() {
  
 void loop() {
   
-  analogWrite(AIN1, 50);
+  analogWrite(AIN1, 255);
   digitalWrite(AIN2,LOW);
-  analogWrite(BIN1, 50);
+  analogWrite(BIN1, 255);
   digitalWrite(BIN2,LOW);
 }
